@@ -34,4 +34,25 @@ func main() {
 	// Challenge
 	// TODO: Calculate the area of a rectangle, circle and trapezoid
 
+	// Rectangle
+	rectangleLength := 45
+	rectangleWidth := 36
+
+	rectangleArea := rectangleLength * rectangleWidth
+	fmt.Println("Rectangle area:", rectangleArea)
+
+	// Circle
+	const pi float64 = 3.1416
+	circleRadius := 30.0
+
+	circleArea := pi * circleRadius * circleRadius
+	fmt.Println("Circle area:", circleArea)
+
+	// Trapezoid
+	minorBase := 29
+	majorBase := 33
+	height := 14
+
+	trapezoidArea := (minorBase + majorBase) * height / 2
+	fmt.Println("Trapezoid area:", trapezoidArea)
 }
