@@ -32,7 +32,7 @@ func main() {
 	fmt.Println("Decrement:", y)
 
 	// Challenge
-	// TODO: Calculate the area of a rectangle, circle and trapezoid
+	// Calculate the area of a rectangle, circle and trapezoid
 
 	// Rectangle
 	rectangleLength := 45
