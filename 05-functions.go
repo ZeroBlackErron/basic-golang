@@ -27,6 +27,20 @@ func getNameAndAge() (name string, age int) {
 	return "Anthony", 22
 }
 
+func calculateRectangleArea(length float32, width float32) float32 {
+	return length * width
+}
+
+func calculateCircleArea(radius float32) float32 {
+	const pi float32 = 3.1416
+
+	return pi * radius * radius
+}
+
+func calculateTrapezoidArea(minorBase float32, majorBase float32, height float32) float32 {
+	return (minorBase + majorBase) * height / 2
+}
+
 func main() {
 	printHelloWorld()
 
@@ -45,6 +59,17 @@ func main() {
 	fmt.Println("Only name:", onlyName)
 
 	// Challenge
-	// TODO: Calculate the area of a rectangle, circle and trapezoid using functions
+	// Calculate the area of a rectangle, circle and trapezoid using functions
 
+	// Rectangle
+	rectangleArea := calculateRectangleArea(45, 36)
+	fmt.Println("Rectangle area:", rectangleArea)
+
+	// Circle
+	circleArea := calculateCircleArea(30)
+	fmt.Println("Circle area:", circleArea)
+
+	// Trapezoid
+	trapezoidArea := calculateTrapezoidArea(29, 33, 14)
+	fmt.Println("Trapezoid area:", trapezoidArea)
 }
