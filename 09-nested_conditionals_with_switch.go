@@ -8,9 +8,9 @@ func main() {
 
 	switch module {
 	case 0:
-		fmt.Println("Odd")
-	default:
 		fmt.Println("Even")
+	default:
+		fmt.Println("Odd")
 	}
 
 	// Second way
