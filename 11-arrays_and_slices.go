@@ -78,7 +78,7 @@ func main() {
 	isPalindrome("effort")
 
 	// Challenge
-	// TODO: Make the `isPalindrome()` function work with uppercase letters
+	// Make the `isPalindrome()` function work with uppercase letters
 
 	fmt.Println("-- Using uppercase letters --")
 	isPalindrome("rePapeR")
