@@ -1,9 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func isPalindrome(word string) {
 	var reverseWord string
+
+	word = strings.ToLower(word)
 
 	// Reverse iteration
 	for i := len(word) - 1; i >= 0; i-- {
@@ -74,4 +79,10 @@ func main() {
 
 	// Challenge
 	// TODO: Make the `isPalindrome()` function work with uppercase letters
+
+	fmt.Println("-- Using uppercase letters --")
+	isPalindrome("rePapeR")
+	isPalindrome("DEed")
+	isPalindrome("peEp")
+	fmt.Println("-----------------------------")
 }
