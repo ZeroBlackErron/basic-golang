@@ -2,6 +2,22 @@ package main
 
 import "fmt"
 
+func isPalindrome(word string) {
+	var reverseWord string
+
+	// Reverse iteration
+	for i := len(word) - 1; i >= 0; i-- {
+		// String concatenation
+		reverseWord += string(word[i])
+	}
+
+	if word == reverseWord {
+		fmt.Printf("'%s' is palindrome\n", word)
+	} else {
+		fmt.Printf("'%s' is not palindrome\n", word)
+	}
+}
+
 func main() {
 	// Golang uses zero-based indexes for array and slices
 
@@ -45,4 +61,17 @@ func main() {
 	moreEvenNumbers := []int{20, 22, 24}
 	evenNumbers = append(evenNumbers, moreEvenNumbers...)
 	fmt.Println("Slice: ", evenNumbers)
+
+	fruits := []string{"apple", "orange", "grapes"}
+
+	for i, fruit := range fruits {
+		fmt.Println(i, fruit)
+	}
+
+	isPalindrome("kayak")
+	isPalindrome("rotator")
+	isPalindrome("effort")
+
+	// Challenge
+	// TODO: Make the `isPalindrome()` function work with uppercase letters
 }
